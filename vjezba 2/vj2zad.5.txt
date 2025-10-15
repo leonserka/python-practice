@@ -1,0 +1,26 @@
+-unosim dva broja
+-oduzimam manji broj od veceg
+-broj koji se oduzima nesmije biti manji od nule
+-oduzimamo ga sve dok veci broj u startu ne postane manji od drugog broja
+-ostatak je dobiveni broj
+
+
+
+
+
+
+
+
+
+9 4
+5 4 
+1 4
+
+8 3 
+5 3
+2 3
+
+
+5 2
+3 2
+1 2

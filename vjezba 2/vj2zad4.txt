@@ -1,0 +1,4 @@
+
+x=int(input("Unesite broj="))
+neg_x=x*(-1)
+print("Negativna vrijednost je = ", neg_x)
