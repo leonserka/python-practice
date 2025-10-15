@@ -1,0 +1,18 @@
+def funkcija(a):
+    if a<=0:
+        return 0
+    if a%2==0:
+        return a+funkcija(a-2)
+    else:
+        return funkcija(a-1)
+
+
+x=int(input("Unesite broj: "))
+while(x<=0):
+    x=int(input("Unesite pozitivan broj: "))
+
+print("Zbroj: ", funkcija(x))
+
+ispis:
+Unesite broj: 7
+Zbroj:  12

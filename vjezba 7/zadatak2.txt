@@ -1,0 +1,41 @@
+def prost(broj):
+    brojac=0
+    for i in range(broj,0,-1):
+        if(broj%i==0 and i!=broj and i!=1):
+            brojac+=1
+    if(brojac!=0 or broj==1):
+        return False
+    else:
+        return True
+        
+def funkcija(a):
+    for i in range(a,0,-1):
+        while prost(i)==True and a%i==0:
+            a=a//i
+            print(i, end=" ") 
+    return " "
+    
+x = int(input("Unesite broj: "))
+while x <= 0:
+    x = int(input("Unesite ne-negativan broj: "))
+
+if x<2:
+    print("Broj nema proste faktore")
+else:
+    print("Prosti faktori: ",  end="")
+    funkcija(x)
+
+
+ispis:
+Unesite broj: 7
+Prosti faktori: 7 
+
+Unesite broj: 8
+Prosti faktori: 2 2 2 
+
+
+Unesite broj: 6
+Prosti faktori: 3 2 
+
+Unesite broj: 26
+Prosti faktori: 13 2 

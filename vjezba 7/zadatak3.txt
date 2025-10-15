@@ -1,0 +1,30 @@
+def djelitelj(broj,djelitelj):
+    return broj%djelitelj==0
+        
+def funkcija(a):
+    brojac=0
+    for i in range(a,0,-1):
+       if djelitelj(a,i):
+           brojac+=1
+    return brojac
+    
+x = int(input("Unesite broj: "))
+while x <= 0:
+    x = int(input("Unesite pozitivan broj: "))
+
+print("Broj djelitelja: ",  funkcija(x))
+
+
+ispis:
+Unesite broj: 80
+Broj djelitelja:  10
+
+Unesite broj: 1
+Broj djelitelja:  1
+
+Unesite broj: 0
+Unesite pozitivan broj: 8
+Broj djelitelja:  4
+
+Unesite broj: 17
+Broj djelitelja:  2

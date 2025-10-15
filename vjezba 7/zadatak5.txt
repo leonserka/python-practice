@@ -1,0 +1,26 @@
+def funkcija(broj):
+    if broj != 0:
+        funkcija(broj >> 1)
+        if broj & 1 == 1:
+            print("1", end=" ")
+        else:
+            print("0", end=" ")
+    
+    
+x = int(input("Unesite broj: "))
+while x < 0:
+    x = int(input("Unesite ne-negativan broj: "))
+
+if x==0:
+    print("Bitovi: 0", end=" ")
+else:
+    print("Bitovi:", end=" ")
+    funkcija(x)
+
+
+ispis:
+Unesite broj: 43
+Bitovi: 1 0 1 0 1 1 
+---------------------------
+Unesite broj: 5
+Bitovi: 1 0 1 
